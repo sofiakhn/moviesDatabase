@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="573.0" prefWidth="889.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar fx:id="defaultmenubar">
+         <menus>
+            <Menu fx:id="defaultfile" mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="New" />
+                  <MenuItem mnemonicParsing="false" text="Open…" />
+                  <Menu mnemonicParsing="false" text="Open Recent" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Close" />
+                  <MenuItem mnemonicParsing="false" text="Save" />
+                  <MenuItem mnemonicParsing="false" text="Save As…" />
+                  <MenuItem mnemonicParsing="false" text="Revert" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Preferences…" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Quit" />
+               </items>
+            </Menu>
+            <Menu fx:id="defaultmenuedit" mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Undo" />
+                  <MenuItem mnemonicParsing="false" text="Redo" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Cut" />
+                  <MenuItem mnemonicParsing="false" text="Copy" />
+                  <MenuItem mnemonicParsing="false" text="Paste" />
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Select All" />
+                  <MenuItem mnemonicParsing="false" text="Unselect All" />
+               </items>
+            </Menu>
+            <Menu fx:id="defulatmenuhelp" mnemonicParsing="false" text="Help" />
+         </menus>
+      </MenuBar>
+      <AnchorPane fx:id="anchorpane" maxHeight="-1.0" maxWidth="-1.0" prefHeight="542.0" prefWidth="893.0">
+         <children>
+            <HBox fx:id="hbox" layoutX="330.0" layoutY="58.0" prefHeight="38.0" prefWidth="563.0">
+               <children>
+                  <Label prefHeight="38.0" prefWidth="159.0" text="Add a Movie" textFill="#a16cc6">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Label fx:id="moviemagic" layoutX="94.0" layoutY="37.0" prefHeight="65.0" prefWidth="236.0" text="Movie Magic">
+               <font>
+                  <Font size="43.0" />
+               </font>
+            </Label>
+            <Button fx:id="addmoviebutton" layoutX="94.0" layoutY="478.0" minWidth="37.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="177.0" text="Add Movie to Database!" textFill="#111111">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="wanttext" layoutX="90.0" layoutY="95.0" prefHeight="35.0" prefWidth="169.0" text="Please fill all possible fields. " />
+            <GridPane layoutX="91.0" layoutY="132.0" prefHeight="293.0" prefWidth="670.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="217.94863891601562" minWidth="10.0" prefWidth="209.10879516601562" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="238.154052734375" minWidth="10.0" prefWidth="236.89120483398438" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="searchtextfield" floatText="Movie Title*" opacity="0.61" prefHeight="38.0" prefWidth="96.0" />
+                  <TextField fx:id="searchtextfield1" floatText="Release Year*" opacity="0.61" prefHeight="38.0" prefWidth="96.0" GridPane.rowIndex="1" />
+                  <TextField fx:id="searchtextfield11" floatText="Studio" opacity="0.61" prefHeight="38.0" prefWidth="96.0" GridPane.rowIndex="2" />
+                  <TextField fx:id="searchtextfield12" floatText="Runtime (Minutes)" opacity="0.61" prefHeight="38.0" prefWidth="96.0" GridPane.rowIndex="3" />
+                  <TextField fx:id="searchtextfield14" floatText="Genre 2" opacity="0.61" prefHeight="38.0" prefWidth="96.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label fx:id="wanttext1" prefHeight="35.0" prefWidth="169.0" text="Genres:" textAlignment="CENTER" GridPane.columnIndex="1" />
+                  <TextField fx:id="searchtextfield141" floatText="Genre 1" opacity="0.61" prefHeight="40.0" prefWidth="158.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="searchtextfield142" floatText="Genre 3" opacity="0.61" prefHeight="38.0" prefWidth="96.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="searchtextfield1411" floatText="Average Rating" opacity="0.61" prefHeight="40.0" prefWidth="158.0" GridPane.columnIndex="2" />
+                  <TextField fx:id="searchtextfield1412" floatText="Lifetime Gross ($)" opacity="0.61" prefHeight="40.0" prefWidth="158.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <CheckBox mnemonicParsing="false" text="Oscar Nominated " GridPane.rowIndex="5" />
+                  <CheckBox mnemonicParsing="false" text="Oscar Best Picture Winner" GridPane.rowIndex="6" />
+                  <TextField fx:id="searchtextfield121" floatText="Oscar Win Year" opacity="0.61" prefHeight="38.0" prefWidth="96.0" GridPane.rowIndex="7" />
+                  <Label fx:id="wanttext11" prefHeight="35.0" prefWidth="169.0" text="Oscar Facts:" textAlignment="CENTER" GridPane.rowIndex="4" />
+                  <Label fx:id="wanttext111" prefHeight="35.0" prefWidth="169.0" text="Lead Actors: " textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField floatText="Actor 1" opacity="0.61" prefHeight="38.0" prefWidth="96.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextField floatText="Actor 2" opacity="0.61" prefHeight="38.0" prefWidth="96.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <TextField floatText="Actor 3 " opacity="0.61" prefHeight="38.0" prefWidth="96.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
