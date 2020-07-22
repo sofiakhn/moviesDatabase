@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <MenuBar blendMode="SRC_ATOP" style="-fx-background-color: gray;" VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="Menu">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Home" />
+                  <MenuItem mnemonicParsing="false" text="About" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <AnchorPane layoutX="134.0" layoutY="24.0" prefHeight="374.4" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <TextField layoutX="14.0" layoutY="23.0" text="Pearl Harbor" />
+                  <Button layoutX="499.0" layoutY="20.0" mnemonicParsing="false" text="Add to Favorites" />
+                  <TextArea layoutX="28.0" layoutY="89.0" prefHeight="220.0" prefWidth="182.0" text="Info: &#10;" />
+                  <TextArea layoutX="226.0" layoutY="89.0" prefHeight="220.0" prefWidth="182.0" text="Cast:&#10;" />
+                  <TextArea layoutX="429.0" layoutY="95.0" prefHeight="66.0" prefWidth="182.0" text="Genre:&#10;" />
+                  <Button layoutX="265.0" layoutY="332.0" mnemonicParsing="false" text="Back" />
+                  <Button layoutX="321.0" layoutY="332.0" mnemonicParsing="false" text="Search" />
+               </children>
+            </AnchorPane>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
