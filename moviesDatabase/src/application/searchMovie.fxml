@@ -4,8 +4,6 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.TextArea?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
@@ -20,20 +18,18 @@
             <MenuItem mnemonicParsing="false" text="Quit" />
           </items>
         </Menu>
+            <Menu mnemonicParsing="false" text="Movie Database" />
       </menus>
     </MenuBar>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
             <AnchorPane layoutX="134.0" layoutY="24.0" prefHeight="374.4" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <TextField layoutX="14.0" layoutY="23.0" text="Pearl Harbor" />
-                  <Button layoutX="395.0" layoutY="23.0" mnemonicParsing="false" text="Edit Movie Info" />
-                  <TextArea layoutX="28.0" layoutY="89.0" prefHeight="220.0" prefWidth="182.0" text="Info: &#10;" />
-                  <TextArea layoutX="226.0" layoutY="89.0" prefHeight="220.0" prefWidth="182.0" text="Cast:&#10;" />
-                  <TextArea layoutX="429.0" layoutY="95.0" prefHeight="66.0" prefWidth="182.0" text="Genre:&#10;" />
                   <Button layoutX="265.0" layoutY="332.0" mnemonicParsing="false" text="Back" />
                   <Button layoutX="321.0" layoutY="332.0" mnemonicParsing="false" text="Search" />
-                  <Button layoutX="513.0" layoutY="23.0" mnemonicParsing="false" text="Remove Movie" />
+                  <Button layoutX="25.0" layoutY="102.0" mnemonicParsing="false" prefHeight="174.0" prefWidth="172.0" text="Top Movies of 2019" />
+                  <Button layoutX="223.0" layoutY="90.0" mnemonicParsing="false" prefHeight="198.0" prefWidth="193.0" text="Top by Genre" />
+                  <Button layoutX="441.0" layoutY="102.0" mnemonicParsing="false" prefHeight="174.0" prefWidth="172.0" text="Oscar Nominations by Decade" textAlignment="CENTER" wrapText="true" />
                </children>
             </AnchorPane>
       </children>
