@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
   <children>
-    <MenuBar blendMode="SRC_ATOP" style="-fx-background-color: gray;" VBox.vgrow="NEVER">
+    <MenuBar fx:id="menu" blendMode="SRC_ATOP" style="-fx-background-color: b8d4bf;" VBox.vgrow="NEVER">
       <menus>
         <Menu mnemonicParsing="false" text="Menu">
           <items>
@@ -25,11 +28,29 @@
       <children>
             <AnchorPane layoutX="134.0" layoutY="24.0" prefHeight="374.4" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <Button layoutX="265.0" layoutY="332.0" mnemonicParsing="false" text="Back" />
-                  <Button layoutX="321.0" layoutY="332.0" mnemonicParsing="false" text="Search" />
-                  <Button layoutX="25.0" layoutY="102.0" mnemonicParsing="false" prefHeight="174.0" prefWidth="172.0" text="Top Movies of 2019" />
-                  <Button layoutX="223.0" layoutY="90.0" mnemonicParsing="false" prefHeight="198.0" prefWidth="193.0" text="Top by Genre" />
-                  <Button layoutX="441.0" layoutY="102.0" mnemonicParsing="false" prefHeight="174.0" prefWidth="172.0" text="Oscar Nominations by Decade" textAlignment="CENTER" wrapText="true" />
+                  <TextField editable="false" layoutY="14.0" prefHeight="26.0" prefWidth="640.0" style="-fx-background-color: b8d4bf;" text="Add a movie to our Database!" AnchorPane.bottomAnchor="334.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="14.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </TextField>
+                  <TextField editable="false" layoutX="1.0" layoutY="48.0" prefHeight="26.0" prefWidth="640.0" style="-fx-background-color: b8d4bf;" text="Please Fill out all the Fields:" />
+                  <TextField fx:id="runtime" layoutX="249.0" layoutY="126.0" prefHeight="26.0" prefWidth="134.0" style="-fx-background-color: #E6E6FA;" text="Runtime" />
+                  <TextField fx:id="year" layoutX="62.0" layoutY="174.0" prefHeight="26.0" prefWidth="134.0" style="-fx-background-color: #E6E6FA;" text="Year Released" />
+                  <TextField fx:id="genre" layoutX="445.0" layoutY="126.0" prefHeight="26.0" prefWidth="134.0" style="-fx-background-color: #E6E6FA;" text="Genre" />
+                  <TextField fx:id="title" layoutX="62.0" layoutY="126.0" prefHeight="26.0" prefWidth="134.0" style="-fx-background-color: #E6E6FA;" text="Title" />
+                  <TextField fx:id="rating" layoutX="249.0" layoutY="174.0" prefHeight="26.0" prefWidth="134.0" style="-fx-background-color: #E6E6FA;" text="Average Rating" />
+                  <TextField fx:id="actor" layoutX="445.0" layoutY="174.0" prefHeight="26.0" prefWidth="134.0" style="-fx-background-color: #E6E6FA;" text="Actors" />
+                  <TextField fx:id="actor2" layoutX="445.0" layoutY="220.0" prefHeight="26.0" prefWidth="134.0" style="-fx-background-color: #E6E6FA;" text="Actors" />
+                  <TextField fx:id="gross" layoutX="249.0" layoutY="220.0" prefHeight="26.0" prefWidth="134.0" style="-fx-background-color: #E6E6FA;" text="Lifetime Gross ($)" />
+                  <TextField fx:id="studio" layoutX="62.0" layoutY="220.0" prefHeight="26.0" prefWidth="134.0" style="-fx-background-color: #E6E6FA;" text="Studio" />
+                  <CheckBox fx:id="oscarnombox" layoutX="69.0" layoutY="269.0" mnemonicParsing="false" style="-fx-background-color: #E6E6FA;" text="Oscar Nominated?" />
+                  <CheckBox fx:id="oscarwonbox" alignment="CENTER_RIGHT" layoutX="69.0" layoutY="295.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="121.0" style="-fx-background-color: #E6E6FA;" text="Oscar Won?" />
+                  <TextField fx:id="oscaryear" layoutX="208.0" layoutY="282.0" prefHeight="26.0" prefWidth="134.0" style="-fx-background-color: #E6E6FA;" text="Oscar Year" />
+                  <Button fx:id="addmoviebutton" layoutX="466.0" layoutY="280.0" mnemonicParsing="false" style="-fx-background-color: b8d4bf;" text="Add Movie">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
                </children>
             </AnchorPane>
       </children>
